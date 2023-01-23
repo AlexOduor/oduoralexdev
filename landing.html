@@ -1,0 +1,62 @@
+<html>
+    <style>
+    
+        body{
+            margin: 0;
+            background: #1e242a;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+        #box1{
+            width: 530px;
+            height: 625px;
+            background-image: url(Aleki.jp);
+            position: absolute;
+            bottom: -100%;
+            left: 30%;
+            animation: anim 2s forwards,anim2 3s forwards 3s;
+        }
+        #box1:after{
+            content: '';
+            position: absolute;
+            width: 530px;
+            height: 625px;
+            background-image: url(link.jpeg);
+            left: 0px;
+            z-index: -1;
+        }
+        @keyframes anim{
+            from{
+                bottom: -100%;
+            }
+            to{
+                bottom: 0%;
+            }
+        }
+        @keyframes anim2{
+            from{
+                left: 30%;
+                width: 530px;
+            }
+            to{
+                left: 30%;
+                width: 50%;
+            }
+
+        }
+        </style>
+    </head>
+
+<body>
+    <div id="main">
+        <div id="box1">
+            
+        </div>
+    </div>
+</body>
+</html>
+           

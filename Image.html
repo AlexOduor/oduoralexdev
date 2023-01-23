@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .items{
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px auto));
+            grid-gap: 2rem;
+            align-items: center;
+          
+           
+        }
+        .sub-box{
+            padding: 45px 45px 45px 45px;
+            transition: ease .50s;
+            cursor: pointer;
+        }
+        .sub-img img{
+            width: 30%;
+           
+            height: 60%;
+            margin-bottom: 20px;
+        }
+        .sub-box:hover{
+            background-color: #ffffff;
+            box-shadow: 18px 0px 87px 0px rgb(10 15 70 /70%);
+            border-radius:12px;
+            will-change: transform;
+            transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+        }
+
+
+    </style>
+  
+</head>
+<body>
+  
+    <div class="items">
+        <div class="sub-box">
+          <div class="sub-img">
+            <img src="Aleki.jpg">
+          </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

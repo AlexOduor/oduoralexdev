@@ -1,0 +1,144 @@
+   <html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+         body{
+            background:  #6fb1fc;;
+        }
+        .container{
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+        }
+        .card{
+            background: white;
+            width: 270px;
+            height: 400px;
+            margin: 10px;
+            border-radius:15px;
+        }
+        .card-image{
+            background-color: aqua;
+            height: 150px;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        img{
+            width: 270px;
+            height: 150px;
+            border-radius: 15px;
+        }
+        .card h2{
+            padding: 10px;
+        }
+        .card p{
+            padding: 10px;
+        }
+        .card a{
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            margin: 20px 50px;
+            text-decoration: none;
+        }
+        .card:hover{
+            background-color: rgb(62,62,62);
+            color: white;
+            cursor: pointer;
+            transform: scale(1.03);
+            transition:all 1s ease;
+        }
+        h2{
+            color: orangered;
+            text-align: center;
+        }
+     
+        nav{
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                 justify-content: space-between;
+                 width: 64px;
+                 height: 100%;
+                 background: linear-gradient(0deg, #8d38cf,#8425e7);
+            }
+            .n{
+                width: 100%;
+                height: auto;
+            }
+        
+</style>
+   </head>
+<body>
+    <nav>
+        <div class="home"><a href="projo3.html"><img src="home.png" alt="home" class="n">Home</a></div>
+        <div class="about"><a href="about.html"><img src="info.png" alt="about" class="n">About</a></div>
+        <div class="skills"><a href="skills.html"><img src="skill.png" alt="skills" class="n">Skills</a></div>
+        <div class="contact"><a href="contact.html"><img src="contact.png" alt="contact" class="n">Contact</a></div>
+    </nav>
+
+    <h2>MY SKILLS</h2>
+    <section class="container">
+        <div class="card">
+            <div class="card-image">
+                <img src="css.jpg" alt="css">
+            </div>
+            <h2>Casceding stylesheet</h2>
+            <p>Is a language used to describe the presentation of a document .CSS describes how elements should be rendered on screen</p>
+            <a href="#">Read More</a>
+        </div>
+    
+        <div class="card">
+            <div class="card-image">
+                <img src="javas.jpeg" alt="java">
+            </div>
+            <h2>javascript</h2>
+            <p>JavaScript is the scripting language of the Web.
+                JavaScript is used in millions of Web pages to add functionality, validate forms, detect browsers, and 
+                much more.</p>
+        </div>
+   
+        <div class="card">
+            <div class="card-image">
+                <img src="html.jpeg" alt="jpeg">
+            </div>
+            <h2>HTML</h2>
+            <p>As its name suggests, HTML is a Markup Language which means you use HTML to 
+                simply "mark-up" a text document with tags that tell a Web browser how to structure 
+                it to display.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="react.jpeg" alt="react">
+            </div>
+            <h2>Reat</h2>
+            <p>React creates a virtual DOM. When state changes in a component it firstly runs a "diffing" algorithm, which
+                identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with
+                the results of diff.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="database.jpeg" alt="data">
+            </div>
+            <h2>MySQL</h2>
+            <p>Structured Query Language, abbreviated as SQL, is a
+                language that is largely used in the industry to query data from databases.</p>
+        </div>
+     </section>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>contact</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                background:  #6fb1fc;
+            }
+            
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-left: -2%;
+    border-radius: 50px;
+}
+
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease;
+
+}
+
+ul li a:hover{
+    color: rgb(230,104,59);
+}
+
+footer{
+    text-align: center;
+    background: orangered;
+    width: 70%;
+    margin: auto;
+}
+form{
+    background:  #8067f0eb;
+}
+
+.form-container{
+    margin: 20px;
+    padding: 15px;
+    background: #173459;
+    color: white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3),0 7px 21px 0 rgba(0,0,0,0.20);
+    width: 50%;
+    margin: auto;
+}
+
+.input-cnt{
+    display: flex;
+    margin-bottom: 15px;
+}
+.input-cnt:last-child{
+    margin-bottom: 0px;
+}
+.input-cnt>i{
+    min-width: 40px;
+    padding: 10px;
+    text-align: center;
+    background: lightgrey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #0076ff;
+}
+.input-cnt> input[type="text"], .input-cnt> textarea{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    width: 100%;
+}
+.textarea-icon{
+    padding: 60PX 10PX;
+}
+.input-cnt > input[type="submit"]{
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 105%;
+    padding: 8px;
+    color: #0076ff;
+    background: white;
+    transition-duration: .5s;
+}
+.input-cnt > input[type="submit"]:hover{
+    color: white;
+    background: #0076ff;
+}
+h2{
+    color: orangered;
+    text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <img src="logoo.jpeg" class="logo" alt="logo">
+    
+                <ul>
+                    <li><a href="projo3.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="worrks.html">MY WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <h2>Contact form</h2>
+
+     <div class="form-container">
+        
+        <form action="#">
+        <div class="input-cnt">
+            <i class="material-icons">Person</i>
+            <input type="text" placeholder="Name" name="name"/>
+        </div>
+
+        <div class="input-cnt">
+            <i class="material-icons">Email</i>
+            <input type="text" placeholder="Email" name="email"/>
+        </div>
+
+        <div class="input-cnt">
+            <i class="material-icons">Message</i>
+            <textarea placeholder="Your message here...." name="message"></textarea>
+        </div>
+
+        <div class="input-cnt">
+            <input type="submit"/>
+         </div>
+        </form>
+     </div>
+
+       
+        
+      <footer>Made with love by Alex Oduor &#169 2022</footer>
+    </body>
+</html>

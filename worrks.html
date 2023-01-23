@@ -1,0 +1,119 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>works</title>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+            }
+           body{
+                margin: 0;
+                padding: 0;
+                background-color: orangered;
+            }
+            .image-container{
+                margin: 0 auto;
+                width: 80%;
+                box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+                margin-bottom: 20px;
+                transition-duration: 1s;
+            }
+            .image-container:hover{
+                width: 90%;
+                box-shadow: 0 18px 36px rgba(0,0,0,0.30),0 14px 11px rgba(0,0,0,0.22);
+            }
+           
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .image-description{
+                padding: 0 15px 15px 15px;
+                text-align: center;
+            }
+            .lightbox{
+                display: table;
+                transition-duration: 1s;
+                position: fixed;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background:rgba(0,0,0,0.7);
+            }
+            .lightbox:target{
+                top: 0;
+            }
+            .lightbox-content{
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+            .close{
+                position: absolute;
+                top: 10px;
+                font-size: 20px;
+                right: 10px;
+                font-weight: 300;
+                text-decoration: none;
+                color: white;
+            }
+            .lightbox img{
+                max-width: 100%;
+                height: auto;
+            }
+            h1{
+                text-align: center;
+            }
+            nav{
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                 justify-content: space-between;
+                 width: 64px;
+                 height: 100%;
+                 background: linear-gradient(0deg, #8d38cf,#8425e7);
+            }
+             
+            
+        
+            
+ </style>
+    </head>
+    <body>
+        <nav>
+            <div class="home"><a href="projo3.html"><img src="home.png" alt="home">Home</a></div>
+            <div class="about"><a href="about.html"><img src="info.png" alt="about">About</a></div>
+            <div class="skills"><a href="skills.html"><img src="skill.png" alt="skills">Skills</a></div>
+            <div class="contact"><a href="contact.html"><img src="contact.png" alt="contact">Contact</a></div>
+        </nav>
+
+        <h1 >Works Galery</h1>
+        <div class="gallery">
+
+            <div class="image-container" id="container1">
+                <a href="#image1"><img src="home.jpeg" alt="home"></a>
+                <p class="image-description">Home Page</p>
+            </div>
+
+            <div class="image-container" id="container2">
+                <a href="#image2"><img src="about.jpeg" alt="image"></a>
+                <p class="image-description">About Page</p>
+            </div>
+            
+            <div class="image-container" id="container3">
+                <a href="#image3"><img src="myskills.jpeg" alt="image"></a>
+                <p class="image-description">My Skills Page</p>
+            </div>
+
+            <div class="image-container" id="container4">
+                <a href="#image4"><img src="contact.jpeg" alt="image"></a>
+                <p class="image-description">Contact Page</p>
+            </div>
+
+        </div>
+    </body>
+</html>
